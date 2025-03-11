@@ -15,14 +15,4 @@ public class Producto {
         System.out.println("Cantidad: " + cantidad);
     }
 
-    public void actualizarPrecio(double nuevoPrecio) {
-        this.precio = nuevoPrecio;
-        System.out.println("El precio ha sido actualizado a: " + nuevoPrecio);
-    }
-
-    public void actualizarStock(int nuevaCantidad) {
-        this.cantidad = nuevaCantidad;
-        System.out.println("El stock ha sido actualizado a: " + nuevaCantidad);
-    }
-
 }
