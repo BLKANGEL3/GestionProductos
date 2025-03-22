@@ -1,7 +1,7 @@
-public class Producto {
+abstract class Producto {
     protected String nombre;
-    private double precio;
-    private int cantidad;
+    protected double precio;
+    protected int cantidad;
 
     public Producto(String nombre, double precio, int cantidad) {
         this.nombre = nombre;
@@ -9,10 +9,6 @@ public class Producto {
         this.cantidad = cantidad;
     }
 
-    public void mostrarInformacion() {
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Precio: $" + precio);
-        System.out.println("Cantidad: " + cantidad);
-    }
+    public abstract void mostrarInformacion();
 
 }

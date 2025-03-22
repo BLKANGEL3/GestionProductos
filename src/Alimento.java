@@ -6,13 +6,11 @@ public class Alimento extends Producto {
         this.fechaCaducidad = fechaCaducidad;
     }
 
-    public void verificarCaducidad() {
-        System.out.println("La fecha de caducidad del producto " + nombre + " es: " + fechaCaducidad);
-    }
-
     @Override
     public void mostrarInformacion() {
-        super.mostrarInformacion();
+        System.out.println("Producto: " + nombre);
+        System.out.println("Precio: $" + precio);
+        System.out.println("Cantidad en stock: " + cantidad);
         System.out.println("Fecha de caducidad: " + fechaCaducidad);
     }
 }

@@ -1,9 +1,9 @@
-public class Electronico extends Producto implements Descuento {
-    private int garantia;
+public class Ropa extends Producto implements Descuento {
+    private String talla;
 
-    public Electronico(String nombre, double precio, int cantidad, int garantia) {
+    public Ropa(String nombre, double precio, int cantidad, String talla) {
         super(nombre, precio, cantidad);
-        this.garantia = garantia;
+        this.talla = talla;
     }
 
     @Override
@@ -11,7 +11,7 @@ public class Electronico extends Producto implements Descuento {
         System.out.println("Producto: " + nombre);
         System.out.println("Precio: $" + precio);
         System.out.println("Cantidad en stock: " + cantidad);
-        System.out.println("Garantía: " + garantia + " meses");
+        System.out.println("Talla: " + talla);
     }
 
     @Override
